@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'Inconsolata', monospace;
+}
+
+body{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #4F4557;
+}
+
+.appBg{
+    height: 450px;
+    width: 320px;
+    margin: auto auto;
+}
+
+.appBg form {
+    overflow: hidden;
+    height: 100%;
+    width: 97%;
+    background: rosybrown;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 5px 6px 5px 3px rgb(100, 66, 66);
+}
+
+.appBg form input[type="textfield"]{
+    position: relative;
+    height: 25%;
+    width: 97%;
+    text-align: right;
+    cursor: default;
+    font-size: 50px;
+    color: rgb(137, 85, 85);
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    outline: none;
+}
+
+.appBg form input[type="button"], input[type="reset"]{
+    width: 22%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 26px;
+    color: rgb(100, 66, 66);
+    margin: 10px 1px;
+    padding: 18px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 5px 8px rgb(100, 66, 66);
+}
+
+.appBg form input[type="button"]:hover, input[type="reset"]:hover{
+    opacity: 0.7;
+    transform: translateY(4px);
+    box-shadow: 0 3px 8px rgb(100, 66, 66);
+}
+
+.button_orange{
+    background: #ff50a4a4;
+}
+
+#button_c{
+    background: #ff0051b6;
+}
+
