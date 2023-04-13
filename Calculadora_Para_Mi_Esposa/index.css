@@ -58,7 +58,7 @@ body{
     box-shadow: 0 5px 8px rgb(100, 66, 66);
 }
 
-.appBg form input[type="button"]:hover, input[type="reset"]:hover{
+.appBg form input[type="button"]:active, input[type="reset"]:active{
     opacity: 0.7;
     transform: translateY(4px);
     box-shadow: 0 3px 8px rgb(100, 66, 66);
