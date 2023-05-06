@@ -60,7 +60,7 @@ function updateSpeedScale(delta) {
 }
 
 function updateScore(delta) {
-    score += delta * 0.07;
+    score += delta * 0.085;
     scoreElem.textContent = `Score: ${Math.floor(score)}`;
 }
 
