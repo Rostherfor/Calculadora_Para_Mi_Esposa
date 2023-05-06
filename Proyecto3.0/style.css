@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-self: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 .world {

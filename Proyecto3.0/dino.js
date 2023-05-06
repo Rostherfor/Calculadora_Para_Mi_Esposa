@@ -5,6 +5,7 @@ import {
 } from "./updateCustomProperty.js";
 
 const dinoElem = document.querySelector('[data-dino]');
+const jumpSound = document.querySelector('#jump-sound');
 const JUMP_SPEED = 0.45;
 const GRAVITY = 0.0015;
 const DINO_FRAME_COUNT = 2;
@@ -35,7 +36,7 @@ export function getDinoRect() {
 }
 
 export function setDinoLose() {
-    dinoElem.src = 'media/dino-lose.png'
+    dinoElem.src = 'media/dino-lose.png';
 }
 
 function handleRun(delta, speedScale) {
@@ -70,4 +71,8 @@ function onJump(e) {
 
     yVelocity = JUMP_SPEED;
     isJumping = true;
+
+    jumpSound.currentTime = 0;
+    jumpSound.play();
 }
+

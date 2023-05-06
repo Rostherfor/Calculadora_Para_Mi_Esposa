@@ -9,6 +9,7 @@ const SPEED_SCALE_INCREASE = 0.00001;
 const worldElem = document.querySelector('[data-world');
 const scoreElem = document.querySelector('[data-score');
 const startScreenElem = document.querySelector('[data-start-screen');
+const gameOverSound = document.querySelector('#game-over-sound');
 
 setPixelToWorldScale();
 window.addEventListener('resize', setPixelToWorldScale);
@@ -76,6 +77,9 @@ function handleStart() {
 
 function handleLose() {
     setDinoLose();
+    gameOverSound.currentTime = 0;
+    gameOverSound.play();
+
     setTimeout(() => {
         document.addEventListener('click', handleStart, {once: true});
         startScreenElem.classList.remove("hide");
